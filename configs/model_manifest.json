@@ -1,0 +1,28 @@
+{
+  "system_initialized": true,
+  "last_updated": "2026-08-22T00:00:00Z",
+  "models": {
+    "kokoro_tts": {
+      "model_key": "kokoro_tts",
+      "category": "audio_models",
+      "name": "Kokoro-82M TTS v0.19",
+      "path": "/content/drive/MyDrive/AI_Creator_OS/audio_models/kokoro-v0_19.pth",
+      "source_url": "https://github.com/hexgrad/kokoro/releases/download/v0.19/kokoro-v0_19.pth",
+      "size_mb": 320.0,
+      "sha256": "",
+      "status": "ready",
+      "license": "Apache-2.0"
+    },
+    "whisper_base": {
+      "model_key": "whisper_base",
+      "category": "audio_models",
+      "name": "OpenAI Whisper Base",
+      "path": "/content/drive/MyDrive/AI_Creator_OS/audio_models/base.pt",
+      "source_url": "https://openaipublic.azureedge.net/main/whisper/models/ed3a0b6b1c0edf879ad9b11996ab15d6e935206c1cad539c088778f73b64f8de/base.pt",
+      "size_mb": 140.0,
+      "sha256": "ed3a0b6b1c0edf879ad9b11996ab15d6e935206c1cad539c088778f73b64f8de",
+      "status": "ready",
+      "license": "MIT"
+    }
+  }
+}

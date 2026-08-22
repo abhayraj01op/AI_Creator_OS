@@ -1,0 +1,7 @@
+# Module 06: Animation & Cartoon Studio Requirements
+opencv-python-headless>=4.9.0
+moviepy>=1.0.3
+pillow>=10.2.0
+imageio>=2.34.0
+scikit-image>=0.22.0
+gdown>=5.1.0

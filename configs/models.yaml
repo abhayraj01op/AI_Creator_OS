@@ -1,0 +1,156 @@
+# AI CREATOR OS — MODEL REGISTRY & FREE COLAB COMPATIBILITY MATRIX
+models:
+  media:
+    flux_schnell_4bit:
+      name: "FLUX.1-schnell (4-bit NF4 / GGUF)"
+      category: "checkpoints"
+      filename: "flux1-schnell-bnb-nf4.safetensors"
+      url: "https://huggingface.co/black-forest-labs/FLUX.1-schnell"
+      min_vram_gb: 8.0
+      recommended_vram_gb: 12.0
+      size_mb: 6200
+      license: "Apache-2.0"
+      notes: "Runs fast on Free Colab 15GB T4 GPU in 4-step mode"
+    sdxl_lightning:
+      name: "SDXL-Lightning / Turbo (4-Step Fast Synthesis)"
+      category: "checkpoints"
+      filename: "sdxl_lightning_4step.safetensors"
+      url: "https://huggingface.co/ByteDance/SDXL-Lightning"
+      min_vram_gb: 6.0
+      recommended_vram_gb: 8.0
+      size_mb: 6900
+      license: "Stability Community"
+      notes: "Ultra-fast SDXL synthesis on T4 GPU"
+    instant_id_sdxl:
+      name: "InstantID Face Consistency Adapter"
+      category: "adapters"
+      filename: "instantid_sdxl.bin"
+      url: "https://huggingface.co/InstantX/InstantID"
+      min_vram_gb: 6.0
+      recommended_vram_gb: 12.0
+      size_mb: 2400
+      license: "Apache-2.0"
+      notes: "Single image character identity preservation"
+    realesrgan_x4:
+      name: "Real-ESRGAN x4plus"
+      category: "models"
+      filename: "RealESRGAN_x4plus.pth"
+      url: "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth"
+      min_vram_gb: 2.0
+      recommended_vram_gb: 4.0
+      size_mb: 67
+      license: "BSD-3-Clause"
+      notes: "High-resolution upscale"
+
+  writer_llm:
+    qwen_2_5_7b_instruct_4bit:
+      name: "Qwen 2.5 7B Instruct (4-bit AWQ / GGUF)"
+      category: "llm_models"
+      repo_id: "Qwen/Qwen2.5-7B-Instruct-AWQ"
+      min_vram_gb: 5.5
+      size_mb: 4800
+      license: "Apache-2.0"
+      notes: "Top-tier multilingual script and article writing on Colab T4"
+    llama_3_2_3b_instruct:
+      name: "Llama 3.2 3B Instruct"
+      category: "llm_models"
+      repo_id: "meta-llama/Llama-3.2-3B-Instruct"
+      min_vram_gb: 4.0
+      size_mb: 6200
+      license: "Llama 3.2 Community"
+      notes: "Fast creative copywriting on T4 GPU & CPU"
+    gemma_2_2b_it:
+      name: "Gemma 2 2B IT"
+      category: "llm_models"
+      repo_id: "google/gemma-2-2b-it"
+      min_vram_gb: 3.0
+      size_mb: 4900
+      license: "Gemma Terms"
+      notes: "Lightweight research and summarization"
+    mistral_7b_instruct_q4:
+      name: "Mistral 7B Instruct v0.3 (Q4_K_M GGUF)"
+      category: "llm_models"
+      repo_id: "TheBloke/Mistral-7B-Instruct-v0.2-GGUF"
+      min_vram_gb: 4.5
+      size_mb: 4370
+      license: "Apache-2.0"
+      notes: "Runs with llama-cpp-python in Colab RAM/VRAM"
+
+  coding:
+    qwen_2_5_coder_7b_4bit:
+      name: "Qwen 2.5 Coder 7B Instruct (4-bit)"
+      category: "llm_models"
+      repo_id: "Qwen/Qwen2.5-Coder-7B-Instruct-AWQ"
+      min_vram_gb: 5.5
+      size_mb: 4900
+      license: "Apache-2.0"
+      notes: "Benchmark-topping code repair & testing on Colab T4"
+    deepseek_coder_6_7b_q4:
+      name: "DeepSeek-Coder 6.7B Instruct (Q4 GGUF)"
+      category: "llm_models"
+      repo_id: "TheBloke/deepseek-coder-6.7B-instruct-GGUF"
+      min_vram_gb: 4.5
+      size_mb: 4100
+      license: "DeepSeek License"
+      notes: "Repository analysis and AST vulnerability scanning"
+
+  voice:
+    kokoro_tts:
+      name: "Kokoro TTS 82M v0.19"
+      category: "audio_models"
+      filename: "kokoro-v0_19.pth"
+      url: "https://github.com/hexgrad/kokoro/releases/download/v0.19/kokoro-v0_19.pth"
+      min_vram_gb: 1.0
+      recommended_vram_gb: 2.0
+      size_mb: 320
+      license: "Apache-2.0"
+      notes: "Zero-latency studio quality neural narration"
+    whisper_base:
+      name: "OpenAI Whisper Base"
+      category: "audio_models"
+      filename: "base.pt"
+      url: "https://openaipublic.azureedge.net/main/whisper/models/ed3a0b6b1c0edf879ad9b11996ab15d6e935206c1cad539c088778f73b64f8de/base.pt"
+      min_vram_gb: 1.0
+      recommended_vram_gb: 2.0
+      size_mb: 140
+      license: "MIT"
+      notes: "Accurate word-level timestamp transcription"
+    demucs_htdemucs:
+      name: "Demucs HTDemucs Vocal & Music Separator"
+      category: "audio_models"
+      filename: "htdemucs.yaml"
+      url: "https://github.com/facebookresearch/demucs"
+      min_vram_gb: 2.0
+      recommended_vram_gb: 4.0
+      size_mb: 350
+      license: "MIT"
+      notes: "Isolates vocals, drums, bass, and background audio"
+
+  animation:
+    svd_xt_1_1:
+      name: "Stable Video Diffusion (SVD-xt 1.1 FP16)"
+      category: "video_models"
+      filename: "svd_xt_1_1.safetensors"
+      url: "https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt-1-1"
+      min_vram_gb: 7.0
+      size_mb: 4800
+      license: "Stability Community"
+      notes: "25-frame smooth camera and character animation"
+    liveportrait:
+      name: "LivePortrait Expression Reenactment"
+      category: "animation_models"
+      filename: "liveportrait_weights.pth"
+      url: "https://github.com/KwaiVGI/LivePortrait"
+      min_vram_gb: 4.0
+      size_mb: 950
+      license: "MIT"
+      notes: "Real-time portrait animation and head movement"
+    wav2lip_gan:
+      name: "Wav2Lip + GAN Lip Synchronization"
+      category: "animation_models"
+      filename: "wav2lip_gan.pth"
+      url: "https://github.com/Rudrabha/Wav2Lip"
+      min_vram_gb: 2.0
+      size_mb: 430
+      license: "Academic/Open"
+      notes: "Precision lip sync matching voiceover audio"

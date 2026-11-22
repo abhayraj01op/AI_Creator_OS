@@ -1,8 +1,0 @@
-# Module 05: YouTube Automation Requirements
-moviepy>=1.0.3
-yt-dlp>=2024.3.10
-google-api-python-client>=2.122.0
-srt>=3.5.3
-pillow>=10.2.0
-qrcode>=7.4.2
-imageio-ffmpeg>=0.4.9

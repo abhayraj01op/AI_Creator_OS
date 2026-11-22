@@ -1,7 +1,0 @@
-# Module 07: Video Engine Requirements
-moviepy>=1.0.3
-opencv-python-headless>=4.9.0
-imageio-ffmpeg>=0.4.9
-scenedetect>=0.6.3
-av>=11.0.0
-ffmpy>=0.3.2
